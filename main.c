@@ -3,41 +3,28 @@
 #include <stdbool.h>
 
 int main(){
-/*
-Skapa ett program där användaren får mata in två tal.
-Låt sedan programmet skriva ut alla tal som finns mellan dessa två tal på skärmen.
-Lös detta med en for-loop.
-Lös den igen med en While-loop*/    
-    int start;
-    int slut;
-    printf("Start:");
-    scanf(" %d", &start);    
-    printf("Slut:");
-    scanf(" %d", &slut);    
 
-    if(start < slut){
-        for(int i=start; i <= slut ; i++ ){
-            printf("%d\n",i);
-        }
 
-        int i=start;
-        while(i <= slut){
-            printf("%d\n",i);
-            i++;
-        }
-    }else { // start >= slut
-            // 20         15
-        for(int i=start; i >= slut ; i-- ){
-            printf("%d\n",i);
-        }
+    while(1){
+        int tal1;
+        int tal2;
+        printf("Tal 1:");
+        scanf(" %d", &tal1);    
+        printf("Tal 2:");
+        scanf(" %d", &tal2);    
 
-        int i=start;
-        while(i >= slut){
-            printf("%d\n",i);
-            i--;
-        }
+        // int summa = tal1 + tal2;
+        // printf("Summan blev %d\n", summa);
 
+        printf("Summan blev %d\n",tal1 + tal2); 
+
+        printf("Viil du fortsätta(1=Ja, 0=Nej)?\n"); 
+        int shouldContinue;
+        scanf(" %d", &shouldContinue);    
+        if(shouldContinue == 0)
+            break;
     }
+    
 
 
 
