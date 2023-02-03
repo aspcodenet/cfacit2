@@ -5,19 +5,19 @@
 
 int main(){
 
-    srand(time(NULL));
     while(1){
-        int dice1 = rand() % 6 + 1;
-        int dice2 =  rand() % 6 + 1;
+        printf("1.Spela spel\n");
+        printf("2.Se highscore\n");
+        printf("3.Avsluta\n");
+        int sel;
 
-        printf("Rolling the dices...\n");
-        printf("The values are...\n");
-        printf("%d\n%d\n",dice1,dice2);
+        scanf(" %d", &sel);
 
-        printf("Roll the dices again?");
-        char ch;
-        scanf(" %c", &ch);
-        if(ch != 'y' )
+        if(sel == 1)
+            printf("Spelet startar\n");
+        else if(sel == 2)
+            printf("Se highscore\n");
+        else if(sel == 3)
             break;
     }
 
