@@ -3,19 +3,113 @@
 #include <stdbool.h>
 
 int main(){
-    //Skapa ett program som skriver ut talen 0-10 på skärmen.
-    for(int i = 0; i <= 10; i++)   {
-        printf("%d\n",i);
+/*
+Skapa ett program där användaren får mata in två tal.
+Låt sedan programmet skriva ut alla tal som finns mellan dessa två tal på skärmen.
+Lös detta med en for-loop.
+Lös den igen med en While-loop*/    
+    int start;
+    int slut;
+    printf("Start:");
+    scanf(" %d", &start);    
+    printf("Slut:");
+    scanf(" %d", &slut);    
+
+    if(start < slut){
+        for(int i=start; i <= slut ; i++ ){
+            printf("%d\n",i);
+        }
+
+        int i=start;
+        while(i <= slut){
+            printf("%d\n",i);
+            i++;
+        }
+    }else { // start >= slut
+            // 20         15
+        for(int i=start; i >= slut ; i-- ){
+            printf("%d\n",i);
+        }
+
+        int i=start;
+        while(i >= slut){
+            printf("%d\n",i);
+            i--;
+        }
+
     }
 
-    int i = 0;
-    while(i <= 10){
-        printf("%d\n",i);
-        i++;
-    }
 
-    for(int i = 10; i >= 0; i = i -4 )   {
-        printf("%d\n",i);
-    }
+
+
+
+
+
+
+
+
+
+
+    // if(start < slut) {
+    //     for(int i=start; i <= slut ; i++ ){
+    //         printf("%d\n",i);
+    //     }
+
+    //     int i=start;
+    //     while(i <= slut){
+    //         printf("%d\n",i);
+    //         i++;
+    //     }
+    // }else{ //slut >= start
+    //     for(int i=start; i >= slut ; i-- ){
+    //         printf("%d\n",i);
+    //     }
+
+    //     int i=start;
+    //     while(i >= slut){
+    //         printf("%d\n",i);
+    //         i--;
+    //     }
+
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // if(start < slut){
+    //     for(int i=start; i <= slut ; i++ ){
+    //         printf("%d\n",i);
+    //     }
+
+    //     int i=start;
+    //     while(i <= slut){
+    //         printf("%d\n",i);
+    //         i++;
+    //     }
+    // }else{
+    //     for(int i=start; i >= slut ; i-- ){
+    //         printf("%d\n",i);
+    //     }
+
+    //     int i=start;
+    //     while(i >= slut){
+    //         printf("%d\n",i);
+    //         i--;
+    //     }
+
+    // }
+
+
 
 }
