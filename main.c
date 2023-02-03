@@ -4,14 +4,10 @@
 
 int main(){
 
-    int summa  = 0;
-    for(int i = 0; i < 10; i++){
-        int tal;
-        printf("Tal %d", i+1);
-        scanf(" %d", &tal);
-        summa += tal;
-    }
-    printf("Summa %d", summa);
-
+    int tal;
+    printf("Mata in ett tal");
+    scanf(" %d", &tal);
+    for(int i = tal-1; i >0; i-- )
+        printf("%d\n",i);
 
 }
